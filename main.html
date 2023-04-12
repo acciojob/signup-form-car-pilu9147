@@ -10,7 +10,56 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-  <label for="name">Name</label> <input type="text" id="name" required> <br>
+	<form method="POST" action="#" id="signup-form">
+  <label for="name">Name*</label>
+  <input type="text" id="name" name="name" placeholder="Name" required>
+
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" placeholder="Email" required>
+
+  <label for="gender">Gender*</label><br>
+  <input type="radio" id="gender_m" name="gender" value="male" required>
+  <label for="gender_m">Male</label><br>
+  <input type="radio" id="gender_f" name="gender" value="female" required>
+  <label for="gender_f">Female</label><br>
+
+  <label for="cars">Car Brands*</label>
+  <select id="cars" name="cars" required>
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="Mercedez">Mercedez</option>
+  </select>
+
+  <label for="age">Age*</label>
+  <input type="number" id="age" name="age" placeholder="Age" required>
+
+  <label for="dob">DOB*</label>
+  <input type="date" id="dob" name="dob" required>
+
+  <label for="tel">Phone Number</label>
+  <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+  <label for="password">Password*</label>
+  <input type="password" id="password" name="password" placeholder="Password" required>
+
+  <label for="tos">
+    <input type="checkbox" id="tos" name="tos" required>
+    I agree to the TOS
+  </label>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--   <label for="name">Name</label> <input type="text" id="name" required> <br>
   <label for="mail">Email</label> <input type="email" id="email" required> <br>
   <label for="gender">Gender</label> Male<input type="radio" name="gender" id="gender_m">  Female<input type="radio" name="gender"id="gender_f"><br>
   <label for="car">Car Brands</label>
@@ -24,7 +73,4 @@
   <label>Phone Number</label> <input type="tel">
   <label>Password</label> <input type="tel">
   <label>Checkbox</label> <input type="checkbox">
-  <label></label>
-</body>
-
-</html>
+  <label></label> -->
